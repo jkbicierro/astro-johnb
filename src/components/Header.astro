@@ -1,0 +1,68 @@
+---
+
+---
+<header>
+    <div class="logo">
+        <a href="">John B</a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <input type="text" name="" id="" placeholder="Search something...">
+        Logo of Coffee
+    </div>
+</header>
+
+<style>
+    header {
+        position: fixed;
+        width: 100%;
+
+        background: rgba(9, 9, 11, 0);
+
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 16px 32px;
+    }
+
+    header .logo {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+    header .logo ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    header .right input {
+        border: 1px solid var(--light-grey);
+        border-radius: 8px;
+        width: 10rem;
+
+        background-color: var(--grey);
+        color: var(--white);
+
+        padding: 8px 10px; 
+    }
+    header .right button {
+        color: var(--dark);
+        padding: 8px;
+        border-radius: 8px;
+        border: none;
+    }
+</style>
