@@ -1,68 +1,74 @@
 ---
 
 ---
-<header>
-    <div class="logo">
-        <a href="">John B</a>
+<nav>
+    <div class="container">
+        <a href=""><span class="profile"></span></a>
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="">Services</a></li>
+            <li><a href="">Blogs</a></li>
             <li><a href="">About</a></li>
         </ul>
+        <button>Let's talk</button>
     </div>
-    <div class="right">
-        <input type="text" name="" id="" placeholder="Search something...">
-        Logo of Coffee
-    </div>
-</header>
+</nav>
 
 <style>
-    header {
-        position: fixed;
-        width: 100%;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        background: rgba(9, 9, 11, 0);
-
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+        padding: 16px;
+    }
+    .container {
+        background: rgb(92, 92, 92);
+        border-radius: 100px;
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 20px;
 
-        padding: 16px 32px;
+        padding: 5px;
+        width: 28.5rem;
     }
+    .profile {
+        display: block;
 
-    header .logo {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
+        height: 35px;
+        width: 35px;
+
+        background-color: var(--white);
+        border-radius: 50%;
     }
-    header .logo ul {
+    ul {
         display: flex;
         align-items: center;
         gap: 20px;
+        
     }
-
-    .right {
-        display: flex;
-        align-items: center;
-        gap: 16px;
+    ul li a {
+        color: var(--light-grey);
     }
-    header .right input {
-        border: 1px solid var(--light-grey);
-        border-radius: 8px;
-        width: 10rem;
-
-        background-color: var(--grey);
+    ul li a:hover {
         color: var(--white);
-
-        padding: 8px 10px; 
     }
-    header .right button {
-        color: var(--dark);
-        padding: 8px;
-        border-radius: 8px;
+    ul li a:active {
+        color: var(--white);
+    }
+    .container button {
+        color: var(--light-grey);
         border: none;
+        border-radius: 24px;
+        padding: 10px 30px;
+        font-family: "Spline Sans", sans-serif;
+      
+        background-color: var(--grey);
+    }
+    .container button:hover {
+        color: var(--white);
+        background-color: var(--dark);
     }
 </style>
