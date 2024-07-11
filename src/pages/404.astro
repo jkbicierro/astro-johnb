@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout pageName="404">
+    <div class="container">
+        <h1>404</h1>
+        <p>This page could not be found</p>
+        <div class="media-container">
+            <a href="https://www.instagram.com/jkbicierro" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="https://discord.gg/wD397DJpVW" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-discord fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/jkbicierro/" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+        </div>
+        <a href="/" class="exit">Go back</a>
+    </div>
+    
+</Layout>
+
+<style>
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    .media-container {
+        display: flex;
+        gap: 12px;
+        margin-top: 10px;
+    }
+    .media-container i {
+        color: var(--light-grey);
+    }
+    .media-container i:hover {
+        color: var(--white);
+    }
+    .container .exit {
+        margin-top: 10px;
+    }
+    .container a:hover {
+        text-decoration: underline;
+    }
+</style>
