@@ -1,36 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
 
 ---
 
 <Layout pageName="Home">
-    <div class="hero-container">
-        <h1>Hi there, I'm Jeck, your interactive guide</h1>
-        <p>Let's explore together</p>
-        <button>Contact me</button>
-    </div>
-    
-
+    <Hero/>
 </Layout>
 
 <style>
-    .hero-container {
-        height: 50vh;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 10px;
-        
-        padding-left: 10rem;
-    }
-    .hero-container h1 {
-        width: 25rem;
-    }
-    .hero-container button {
-        color: var(--dark);
-        padding: 10px 20px;
-        border-radius: 8px;
-    }
+
 </style>
