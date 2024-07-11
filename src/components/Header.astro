@@ -19,6 +19,7 @@
 </div>
 
 <style>
+
     nav {
         position: fixed;
         top: 0;
@@ -66,9 +67,6 @@
     ul li a:hover {
         color: var(--white);
     }
-    ul li a:active {
-        color: var(--white);
-    }
 
     .container button {
         color: var(--light-grey);
@@ -91,7 +89,8 @@
 
     /* Navigation for Mobile Browsers */
     .nav-moba {
-        display: absolute;
+        position: fixed;
+        top: 0;
         padding: 25px;
     }
     @media only screen and (min-width: 601px) {

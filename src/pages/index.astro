@@ -2,13 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import Header from "../components/Header.astro";
+import Project from "../components/Showcase.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout pageName="Home">
     <Header />
     <Hero/>
+    <Project/>
+    
+    <div class="footer-section">
+        Crafted with ❤️
+    </div>
 </Layout>
 
 <style>
-
+    .footer-section {
+        text-align: center;
+        padding: 25px 0;
+        color: var(--light-grey);
+    }
 </style>
