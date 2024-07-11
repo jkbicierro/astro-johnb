@@ -14,6 +14,10 @@
     </div>
 </nav>
 
+<div class="nav-moba">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
 <style>
     nav {
         position: fixed;
@@ -78,5 +82,21 @@
     .container button:hover {
         color: var(--white);
         background-color: var(--dark);
+    }
+    @media only screen and (max-width: 600px) {
+        .container {
+            display: none;
+        }
+    }
+
+    /* Navigation for Mobile Browsers */
+    .nav-moba {
+        display: absolute;
+        padding: 25px;
+    }
+    @media only screen and (min-width: 601px) {
+        .nav-moba {
+            display: none;
+        }
     }
 </style>
