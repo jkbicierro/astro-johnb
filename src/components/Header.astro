@@ -27,14 +27,15 @@
 
         /* Center div */
         display: flex;
-        flex-wrap: nowrap; /* It doesn't go down */
-        align-items: center;
         justify-content: center;
 
         padding-top: 16px;
     }
     .container {
-        background: rgb(92, 92, 92);
+        background: rgb(78, 78, 78, 0.6);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        
         border-radius: 100px;
 
         display: flex;
@@ -44,22 +45,19 @@
 
         padding: 5px;
     }
-
     .profile {
         display: block;
 
         height: 35px;
         width: 35px;
 
-        background-color: var(--white);
+        background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
         border-radius: 50%;
     }
-
     ul {
         display: flex;
         align-items: center;
         gap: 20px;
-        
     }
     ul li a {
         color: var(--light-grey);
@@ -75,7 +73,7 @@
         padding: 10px 30px;
         font-family: "Spline Sans", sans-serif;
       
-        background-color: var(--grey);
+        background: linear-gradient(346deg, rgba(36,36,36,1) 0%, rgba(0,0,0,1) 100%);
     }
     .container button:hover {
         color: var(--white);
