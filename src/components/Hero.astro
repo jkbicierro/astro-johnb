@@ -1,14 +1,19 @@
 ---
-import SpotifyEmbed from '../components/SpotifyEmbed.astro';
 ---
 
 <div class="hero-container">
 
-    <div class="upper-container">
+    <!--<div class="upper-container">
         <p><span style="color: #7CDCF0">console</span>.<span style="color: #DCDCAA">log</span><span style="color: #DBD70A">(</span><span style="color: #CE915B">"Hello, world!"</span><span style="color: #DBD70A">)</span>;</p>
+    </div>-->
+
+    <div class="title-container">
+        <h1>john b</h1>
+        <div class="badge-container">
+            @jkbicierro
+        </div>
     </div>
 
-    <h1>Hi there, I'm Jeck, your interactive guide</h1>
     <p>Let's explore together</p>
     <div class="btn-container">
         <button>Sign In</button>
@@ -19,30 +24,33 @@ import SpotifyEmbed from '../components/SpotifyEmbed.astro';
         <a href="https://discord.gg/wD397DJpVW" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-discord fa-xl"></i></a>
         <a href="https://www.linkedin.com/in/jkbicierro/" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-xl"></i></a>
     </div>
-    <div class="embed-container">
-        <SpotifyEmbed/>
-    </div>
 </div>
 
 <style>
     .hero-container {
-        padding: 450px 0;
-        height: 60vh;
-        
+        padding: 220px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 12px;
     }
-    .upper-container {
+    /*.upper-container {
         background-color: rgb(34, 36, 36);
         padding: 10px 28px;
         border-radius: 8px;
+    }*/
+    .title-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
     }
-    .hero-container h1 {
-        width: 25rem;
-        text-align: center;
+    .badge-container {
+        border-radius: 16px;
+        background-color: rgb(43, 43, 43);
+        color: rgb(190, 190, 190);
+        padding: 8px;
     }
     .btn-container {
         display: flex;
@@ -79,8 +87,5 @@ import SpotifyEmbed from '../components/SpotifyEmbed.astro';
     }
     .media-container i:hover {
         color: var(--white);
-    }
-    .embed-container {
-        margin-top: 80px;
     }
 </style>
