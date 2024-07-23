@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets';
+
+---
+<a href="https://buymeacoffee.com/jkbicierro" target="blank" rel="noopener noreferrer">    
+    <div id="container">
+        <ul>
+            <li>
+                <div id="image-container">
+                    <Image 
+                        src="/src/assets/icons/coffee-cup.png" 
+                        alt="a" 
+                        width="20",
+                        height="20"
+                    />
+                </div>
+            </li>
+            <li><p>Buy me a coffee</p></li>
+        </ul>
+    </div>
+</a>
+
+<style>
+    #container {
+        background: linear-gradient(90deg, rgb(252, 193, 66) 0%, rgb(255, 187, 0) 100%);
+        border-radius: 8px;
+
+        padding: 10px 15px; 
+    }
+    #container:hover {
+        background: linear-gradient(180deg, rgb(255, 199, 78) 0%, rgb(255, 219, 120) 100%);
+    }
+    #image-container:hover {
+        transform: rotate(360deg);
+        transition: all 0.5s;
+    }
+
+    #container ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    #container ul li p {
+        color: var(--dark);
+    }
+</style>
+
+<script>
+    const image = document.getElementById("image-container"),
+        cont = document.getElementById("container");
+
+        
+
+</script>
