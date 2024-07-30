@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import coffeeImage from "../assets/icons/coffee-cup.png";
 
 ---
 <a href="https://buymeacoffee.com/jkbicierro" target="blank" rel="noopener noreferrer">    
@@ -8,7 +9,7 @@ import { Image } from 'astro:assets';
             <li>
                 <div id="image-container">
                     <Image 
-                        src="/src/assets/icons/coffee-cup.png" 
+                        src={coffeeImage}
                         alt="a" 
                         width="20",
                         height="20"
