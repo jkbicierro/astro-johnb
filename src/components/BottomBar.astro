@@ -10,7 +10,7 @@ import coffeeImage from "../assets/icons/coffee-cup.png";
                 <div id="image-container">
                     <Image 
                         src={coffeeImage}
-                        alt="a" 
+                        alt="a coffee mug" 
                         width="20",
                         height="20"
                     />
@@ -31,7 +31,7 @@ import coffeeImage from "../assets/icons/coffee-cup.png";
     #container:hover {
         background: linear-gradient(180deg, rgb(255, 199, 78) 0%, rgb(255, 219, 120) 100%);
     }
-    #image-container:hover {
+    #container:hover #image-container {
         transform: rotate(360deg);
         transition: all 0.5s;
     }
@@ -47,10 +47,3 @@ import coffeeImage from "../assets/icons/coffee-cup.png";
     }
 </style>
 
-<script>
-    const image = document.getElementById("image-container"),
-        cont = document.getElementById("container");
-
-        
-
-</script>
