@@ -1,29 +1,27 @@
 ---
+// Buttons
+import Button from "../components/interactive/Button.astro";
+import SolidButton from "../components/interactive/SolidButton.astro";
+import OutlineButton from "../components/interactive/OutlineButton.astro";
+import Media from "../components/interactive/Media.astro";
 ---
 
 <div class="hero-container">
-
-    <!--<div class="upper-container">
-        <p><span style="color: #7CDCF0">console</span>.<span style="color: #DCDCAA">log</span><span style="color: #DBD70A">(</span><span style="color: #CE915B">"Hello, world!"</span><span style="color: #DBD70A">)</span>;</p>
-    </div>-->
-
+   
     <div class="title-container">
         <h1>john b</h1>
         <div class="badge-container">
             @jkbicierro
         </div>
     </div>
+    <p style="color: var(--s2)">Let's explore together</p>
+    
+    <div class="btn-con">
+        <SolidButton name="Get in touch" link="#"/>
+        <Button name="View services" link="#"/>
+    </div>
 
-    <p>Let's explore together</p>
-    <div class="btn-container">
-        <button>Sign In</button>
-        <a href="">Unlock Features</a>
-    </div>
-    <div class="media-container">
-        <a href="https://www.instagram.com/jkbicierro" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-xl"></i></a>
-        <a href="https://discord.gg/wD397DJpVW" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-discord fa-xl"></i></a>
-        <a href="https://www.linkedin.com/in/jkbicierro/" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-    </div>
+    <Media/>
 </div>
 
 <style>
@@ -32,58 +30,22 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 12px;
+        gap: 16px;
     }
-    /*.upper-container {
-        background-color: rgb(34, 36, 36);
-        padding: 10px 28px;
-        border-radius: 8px;
-    }*/
     .title-container {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
     }
     .badge-container {
         border-radius: 16px;
-        background-color: rgb(43, 43, 43);
-        color: rgb(190, 190, 190);
+        background-color: var(--s5);
+        color: var(--s3);
         padding: 8px;
     }
-    .btn-container {
+    .btn-con {
         display: flex;
         align-items: center;
-        gap: 10px;
-        margin-top: 10px;
-    }
-    .btn-container button {
-        color: var(--dark);
-        padding: 10px 20px;
-        border: none;
-        border-radius: 16px;
-    }
-    .btn-container button:hover {
-        background-color: var(--light-grey);
-    }
-    .btn-container a {
-        color: var(--light-grey);
-        border: 1px solid var(--light-grey);
-        padding: 10px;
-        border-radius: 16px;
-    }
-    .btn-container a:hover {
-        color: var(--white);
-        border: 1px solid var(--white);
-    }
-    .media-container {
-        display: flex;
         gap: 12px;
-        margin-top: 10px;
-    }
-    .media-container i {
-        color: var(--light-grey);
-    }
-    .media-container i:hover {
-        color: var(--white);
     }
 </style>

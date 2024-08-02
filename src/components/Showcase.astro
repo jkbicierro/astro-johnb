@@ -1,11 +1,12 @@
 ---
 
-
+//Buttons
+import Button from "../components/interactive/Button.astro";
 ---
 
 <div class="container">
-    <h2>Explore recent projects</h2>
-    <p>Showcasing my works</p>
+    <h2>Explore featured projects</h2>
+    <p>Highlighting my expertise and creativity</p>
     <div class="card-container">
         <a href="404"><img src="https://cdn.dribbble.com/userupload/5088928/file/original-9afe1923ce02d6507f058d1a5b129014.png?resize=1024x768" 
             alt=""></a>
@@ -19,19 +20,19 @@
             alt=""></a>
     </div>
 
-    <a href="404" class="discover">Discover more</a>
+    <Button name="Discover more" link="#"/>
 </div>
 
 <style>
     p {
-        color: var(--light-grey);
+        color: var(--s2);
     }
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         
-        gap: 8px;
+        gap: 16px;
     }
     .card-container {
         display: flex;
@@ -39,6 +40,8 @@
         justify-content: center;
         
         gap: 16px;
+
+        max-width: 1200px;
 
         margin: 0 230px;
         margin-top: 24px;
@@ -49,22 +52,11 @@
         overflow: hidden;
         border-radius: 16px;
         border: 1px solid var(--light-grey);
+
+        transition: all 0.3s;
     }
     .card-container img:hover {
-     
         border: 1px solid var(--white);
-
-
     }
-
-    .container .discover {
-        margin-top: 5px;
-        color: blueviolet;
-    }
-    .container .discover:hover {
-        color: red;
-        text-decoration: underline;
-    }
-
 </style>
 

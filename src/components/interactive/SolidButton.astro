@@ -1,0 +1,31 @@
+---
+interface Props {
+	name: string,
+    link: string
+}
+const { name, link } = Astro.props;
+---
+<a href={link}>
+    <div class="btn-con">
+        {name}
+    </div>
+</a>
+
+<style>
+    .btn-con {
+        display:inline-flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 10px 20px;
+        border-radius: 12px;
+        color: var(--s5);
+        background-color: var(--s2);
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+    .btn-con:hover {
+        background-color: var(--s1);
+    }
+</style>

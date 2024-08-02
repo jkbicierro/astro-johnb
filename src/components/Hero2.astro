@@ -1,76 +1,41 @@
 ---
-import { Image } from 'astro:assets';
-import adnuLogo from "../assets/icons/adnu-logo.png";
+// Buttons
+import OutlineButton from "../components/interactive/OutlineButton.astro";
 ---
 
 <main>
     <h1>
-        I'm <span>John</span>, an Information Technology student at Ateneo de Naga University, specializing in creating <span>innovative</span> and <span>beneficial</span> tech solutions.
+        I'm <span>John</span>, an Information Technology student at Ateneo de Naga University, specializing in creating <span>innovative</span> and <span>beneficial</span> tech solutions
     </h1>
 
     <div class="container">
-        <div class="btn-container">
-            Hire me for design
-        </div>
-        <div class="btn-container">
-            Hire me for development
-        </div>
-        <div class="x-container">
-            Connect on <i class="fa-brands fa-x-twitter"></i>
-        </div>
+        <OutlineButton name="Hire me for development" link=""/>
+        <OutlineButton name="Hire me for design" link=""/>
     </div>
 </main>
 
 <style>
-
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 16px;
 
-        margin: 0 50px;
+        margin: 0 30px;
     }
     main h1 {
         text-align: center;
         max-width: 800px;
         line-height: 45px;
-        color: #949494;
+        color: var(--s4);
     }
     main span {
-        color: var(--white);
+        color: var(--s1);
     }
     .container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 16px;
+        gap: 12px;
     }
-    .container .btn-container {
-        border: 1px solid white;
-        border-radius: 16px;
-        padding: 8px 15px;
-
-        cursor: pointer;
-    }
-    .container .btn-container:hover {
-        background-color: var(--white);
-        color: var(--dark);
-    }
-    .container .x-container, i {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        cursor: pointer;
-        color: blueviolet;
-    }
-    .container .x-container:hover,
-    .container .x-container:hover i,
-    .container .x-container:hover ~ p,
-    .container .x-container:hover ~ i {
-        color: red;
-    
-    }
-    
 </style>

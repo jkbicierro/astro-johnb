@@ -1,18 +1,29 @@
 ---
+// main
 import Layout from '../layouts/Layout.astro';
+
+// hero
 import Hero from '../components/Hero.astro';
 import Hero2 from "../components/Hero2.astro";
+
+// css: position fixed
 import Header from "../components/Header.astro";
-import Project from "../components/Showcase.astro";
 import BottomBar from "../components/BottomBar.astro";
+
+import Showcase from "../components/Showcase.astro";
+import ProjectList from "../components/ProjectList.astro";
 ---
 
 <Layout pageName="Home">
     <main>
+        
         <Header/>
         <Hero/>
         <Hero2/>
-        <Project/>
+
+        <Showcase/>
+        <ProjectList/>
+
     
         <div class="botbar-container">
             <BottomBar/>
@@ -22,11 +33,11 @@ import BottomBar from "../components/BottomBar.astro";
 
 <style>
     main {
-        margin: 350px 0;
-        gap: 350px;
+        margin: 200px 0;
+        gap: 200px;
         display: flex;
         flex-direction: column;
-        
+   
     }
     .botbar-container {
         position: fixed;

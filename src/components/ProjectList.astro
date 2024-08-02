@@ -1,0 +1,132 @@
+---
+// Buttons
+import Button from "../components/interactive/Button.astro";
+---
+
+<main>
+    <ul>
+        <li><a href="">open.mp developer @retrorp<span>2020</span></a></li>
+        <li><a href="">    
+            <div class="con-in">
+                <i class="fa-solid fa-book fa-xs"></i>
+                compiling c# for mobile tweak
+            </div>
+            <span>2020</span></a>
+        </li>
+        <li><a href="">samp developer @lostislandrp<span>2020</span></a></li>
+        <li><a href="">deploying game server @propagandarp<span>2020</span></a></li>
+        <li><a href="">multi-purpose discord bot using discord.js<span>2020</span></a></li>
+        <li><a href="">
+            <div class="con-in">
+                <i class="fa-solid fa-book fa-xs"></i>
+                installation and deploying forums using windows
+            </div>
+            <span>2015</span></a>
+        </li>
+        <li><a href="">
+            <div class="con-in">
+                <i class="fa-solid fa-book fa-xs"></i>
+                installation of game panel using centos and ubuntu
+            </div>
+            <span>2014</span></a>
+        </li>
+        <li><a href="">
+            <div class="con-in">
+                <i class="fa-solid fa-book fa-xs"></i>
+                deploying game server using ubuntu
+            </div>
+            <span>2014</span></a>
+        </li>
+        <li><a href="">
+            <div class="con-in">
+                <i class="fa-solid fa-book fa-xs"></i>
+                pawno a c++ framework
+            </div>
+            <span>2014</span></a>
+        </li>
+    </ul>
+    <div class="con">
+   
+        <h1>Explore the systems I've experienced over the years</h1>
+        <div class="upper-container">
+            <p>
+                <span style="color: #4A9CB3">SELECT</span> exp, year
+                <span style="color: #4A9CB3">FROM</span> users
+                <span style="color: #4A9CB3">WHERE</span> name = <span style="color: #CE9178">"jkbicierro"</span>
+            </p>
+        </div>
+        <p>
+            I began coding while playing an old <a href="https://www.rockstargames.com/" target="blank" rel="noopener noreferrer">Rockstar Games</a> with the community <a href="https://www.open.mp/" target="blank" rel="noopener noreferrer">samp/open.mp</a>, a game mode that allows you to play with friends. 
+            Due to my curiosity about how servers are made, I started to learn how to deploy one ~
+        </p>
+        <Button name="Want to see more?" link=""/>
+    </div>
+</main>
+
+<style>
+    @media only screen and (max-width: 1000px) {
+        main {
+            display: flex;
+            flex-direction: column-reverse;
+       
+        }
+        main .con {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    main {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    main ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main ul li {
+        padding: 12px;
+        width: 450px;
+        transition: all 0.3s;
+    }
+    main ul li a {
+        display: flex;
+        justify-content: space-between;
+        color: var(--s2);
+    }
+    main ul li a span {
+        color: var(--s4)
+    }
+    main ul li:hover {
+        background-color: var(--s5);
+        color: var(--s1);
+        border-radius: 8px;
+    }
+    .upper-container {
+        background-color: rgb(34, 36, 36);
+        padding: 8px 16px;
+        border-radius: 8px;
+    }
+    .con {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        width: 300px;
+    }
+    .con h1 {
+        color: var(--s1);
+    }
+    .con p {
+        color: var(--s3);
+        line-height: 24px;
+    }
+    .con-in {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+</style>
