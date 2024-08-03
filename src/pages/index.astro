@@ -12,6 +12,8 @@ import BottomBar from "../components/BottomBar.astro";
 
 import Showcase from "../components/Showcase.astro";
 import ProjectList from "../components/ProjectList.astro";
+
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout pageName="Home">
@@ -24,20 +26,21 @@ import ProjectList from "../components/ProjectList.astro";
         <Showcase/>
         <ProjectList/>
 
+        <Footer/>
     
         <div class="botbar-container">
             <BottomBar/>
         </div>
+        
     </main>
 </Layout>
 
 <style>
     main {
-        margin: 200px 0;
+        margin: 200px 0 32px 0;
         gap: 200px;
         display: flex;
         flex-direction: column;
-   
     }
     .botbar-container {
         position: fixed;
