@@ -18,8 +18,15 @@ import Footer from "../components/Footer.astro";
 
 <Layout pageName="Home">
     <main>
-        
+        <!-- css: position fixed -->
         <Header/>
+        <BottomBar/>
+        
+        
+        <section>
+            
+        </section>
+        
         <Hero/>
         <Hero2/>
 
@@ -27,25 +34,14 @@ import Footer from "../components/Footer.astro";
         <ProjectList/>
 
         <Footer/>
-    
-        <div class="botbar-container">
-            <BottomBar/>
-        </div>
-        
     </main>
 </Layout>
 
 <style>
     main {
-        margin: 200px 0 100px 0;
+        margin: 25px 0 32px 0;
         gap: 200px;
         display: flex;
         flex-direction: column;
-    }
-    .botbar-container {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        margin: 0 30px 30px 0;
     }
 </style>

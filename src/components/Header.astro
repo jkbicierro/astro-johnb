@@ -5,12 +5,12 @@ import Logo from "../components/Logo.astro";
     <div class="container">
         <Logo/>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/showcase">Showcase</a></li>
-            <li><a href="/explorations">Explorations</a></li>
+            <li><a href="#" id="active">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="showcase">Showcase</a></li>
+            <li><a href="explorations">Explorations</a></li>
         </ul>
-        <button>Let's talk</button>
+        <a href="contact" class="btn-contact">Let's talk</a>
     </div>
 </nav>
 
@@ -51,20 +51,21 @@ import Logo from "../components/Logo.astro";
     }
     ul li a {
         color: var(--s3);
-        transition: 0.3s;
+        transition: all 0.3s;
     }
     ul li a:hover {
         color: var(--s1);
     }
-    .container button {
+    #active {
+        color: var(--s1);
+    }
+    .container .btn-contact {
+        background: linear-gradient(346deg, rgba(36,36,36,1) 0%, rgba(0,0,0,1) 100%);
         color: var(--s3);
         border: none;
         border-radius: 24px;
         padding: 10px 30px;
-
         cursor: pointer;
-      
-        background: linear-gradient(346deg, rgba(36,36,36,1) 0%, rgba(0,0,0,1) 100%);
     }
  
     @media only screen and (max-width: 600px) {
@@ -97,5 +98,15 @@ import Logo from "../components/Logo.astro";
 </style>
 
 <script>
-   
+    window.addEventListener('scroll', () => {
+  
+        if(window.scrollY == 0) {
+            console.log("y1111");
+        }
+        else if(window.scrollY == 200) {
+            console.log("y22");
+        }
+    });
+
+
 </script>
