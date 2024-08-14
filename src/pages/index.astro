@@ -14,6 +14,8 @@ import Showcase from "../components/Showcase.astro";
 import ProjectList from "../components/ProjectList.astro";
 
 import Footer from "../components/Footer.astro";
+
+import HoverPage from "../components/HoverPage.astro";
 ---
 
 <Layout pageName="Home">
@@ -22,24 +24,20 @@ import Footer from "../components/Footer.astro";
         <Header/>
         <BottomBar/>
         
-        
-        <section>
-            
-        </section>
-        
         <Hero/>
-        <Hero2/>
 
         <Showcase/>
         <ProjectList/>
 
+        <!--<HoverPage/>-->
+        <Hero2/>
         <Footer/>
     </main>
 </Layout>
 
 <style>
     main {
-        margin: 25px 0 32px 0;
+        margin: 200px 0 32px 0;
         gap: 200px;
         display: flex;
         flex-direction: column;

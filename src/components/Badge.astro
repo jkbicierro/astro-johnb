@@ -1,0 +1,26 @@
+---
+interface Props {
+	name: string
+}
+const { name } = Astro.props;
+---
+
+<div class="con">
+    {name}
+</div>
+
+<style>
+    .con {
+        
+        display: inline;
+
+        background-color: var(--s1);
+        color: var(--s7);
+        border-radius: 16px;
+        padding: 3px 10px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+
+</style>
